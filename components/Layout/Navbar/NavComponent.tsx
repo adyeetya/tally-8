@@ -38,7 +38,7 @@ const RapidResponseCenter = () => {
   }
   return (
     <>
-      <Button size='lg' variant="primary" onClick={handleShow} >
+      <Button size="lg" variant="primary" onClick={handleShow}>
         Rapid Support Center
       </Button>
       <Modal show={show} onHide={handleClose}>
@@ -65,33 +65,39 @@ const CollapsibleNavbar = () => {
     color: '#fff', // Set your desired text color
   }
 
-     const [isSticky, setSticky] = useState(false)
+  const [isSticky, setSticky] = useState(false)
 
-     useEffect(() => {
-       const handleScroll = () => {
-         if (window.scrollY > 100) {
-           setSticky(true)
-         } else {
-           setSticky(false)
-         }
-       }
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setSticky(true)
+      } else {
+        setSticky(false)
+      }
+    }
 
-       window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', handleScroll)
 
-       // Cleanup the event listener on component unmount
-       return () => {
-         window.removeEventListener('scroll', handleScroll)
-       }
-     }, [])
-
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <Navbar
       expand="lg"
-      bg="light"
+      bg="dark"
+      data-bs-theme="dark"
+      variant="dark"
       className={`navbar navbar-expand-lg navbar-light bg-light ${
         isSticky ? 'fixed-top' : ''
       }`}
+      style={{
+        padding: '10px',
+        borderRadius: '1rem',
+        backgroundColor: '#0d092c',
+      }}
     >
       <Navbar.Toggle onClick={toggleNavbar} aria-controls="navbar-nav" />
       <Navbar.Collapse
@@ -714,6 +720,19 @@ const CollapsibleNavbar = () => {
               </Link>
             </Button>
           </Nav.Item>
+          {/* <Nav.Item>
+            <button>
+              <Link href="/tallyinternational">
+                <img
+                  src="/images/banner/tallyinternational.png"
+                  className="tally-international-shake d-none d-md-flex"
+                 
+                  alt="Tally International"
+                />
+                <span>tally</span>
+              </Link>
+            </button>
+          </Nav.Item> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

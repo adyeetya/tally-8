@@ -454,9 +454,7 @@ span,
   color: #3143ef;
 }
 
-.header-top {
-  /* border-bottom: 1px solid #eeecf7; */
-}
+
 
 .header-top .social-icons li {
   margin: 0;
@@ -873,11 +871,11 @@ span,
   position: relative;
 }
 
-.navbar-nav .nav-link:hover,
+/* .navbar-nav .nav-link:hover,
 .navbar-nav .nav-item .nav-link.active {
   color: #fd5b03;
   background: #ffffff;
-}
+} */
 
 .header-2 {
   position: absolute;
@@ -937,7 +935,7 @@ span,
   .header-2 .navbar-nav .nav-link:hover,
   .header-2 .navbar-nav .nav-item .nav-link.active {
     background: none;
-    color: #fd5b03;
+   
   }
 
   .header-3 .navbar-nav .nav-link:hover,

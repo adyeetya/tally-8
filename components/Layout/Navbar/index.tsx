@@ -215,7 +215,8 @@ export const Navbar: FC = () => {
 
               <div
                 className="row"
-                style={{ backgroundColor: 'white', borderRadius: '1rem' }}
+                style={{ borderRadius: '1rem' }}
+                // backgroundColor:'#212529'
               >
                 <div className="col-lg-12" style={{}}>
                   {/*  */}

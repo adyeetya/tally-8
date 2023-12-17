@@ -454,9 +454,6 @@ span,
   color: #3143ef;
 }
 
-.header-top {
-  /* border-bottom: 1px solid #eeecf7; */
-}
 
 .header-top .social-icons li {
   margin: 0;
@@ -873,7 +870,7 @@ span,
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-item .nav-link.active {
-  background: #fd5b03;
+  
   color: #ffffff;
 }
 
@@ -950,7 +947,7 @@ span,
 }
 
 .header-3 #header-wrap.fixed-header {
-  /* background: #0d092c */
+  background: #0d092c
 }
 
 .header-3 #header-wrap.fixed-header .navbar {
